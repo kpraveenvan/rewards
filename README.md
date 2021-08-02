@@ -1,4 +1,4 @@
-##Start the Application using the mvn command: mvn clean install spring-boot:run (or simply run the RewardsApplication.java) and it starts the rewards application with an inmemory H2 database.
+## Start the Application using the mvn command: mvn clean install spring-boot:run (or simply run the RewardsApplication.java) and it starts the rewards application with an inmemory H2 database.
 
 Create an initial Data Set: CSV File data.csv and Content inside the file is:
 
@@ -18,13 +18,13 @@ consumerId,first_name,last_name,transaction_date,transaction_amount
 2,Praveen,Kumar,03/01/2021,1500.00
 ```
 
-CURL Command used to create an initial dataset (Make sure you select the approriate location for data.csv):
+# CURL Command used to create an initial dataset (Make sure you select the approriate location for data.csv):
 
 curl --location --request POST 'http://localhost:8080/consumerTransactions/upload' \
 --header 'Content-Type: application/csv' \
 --form 'file=@"/C:/Users/prave/Downloads/data.csv"'
 
-For getting the rewards earned by customers Monthly and total rewards in last 3 months use the CURL:
+# Getting the rewards earned by customers Monthly and total rewards in last 3 months use the CURL:
 
 curl --location --request GET 'http://localhost:8080/consumerTransactions/consumerPoints'
 
