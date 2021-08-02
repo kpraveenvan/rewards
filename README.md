@@ -59,26 +59,26 @@ The Response for the service call is as below for the dataset:
     {
         "customerId": 2,
         "firstName": "Praveen",
-        "lastName": "vanga",
+        "lastName": "Kumar",
         "monthlyRewards": [
             {
                 "month": "JUNE",
-                "pointsForMonth": 15
+                "pointsForMonth": 230
             },
             {
                 "month": "MAY",
-                "pointsForMonth": 15
+                "pointsForMonth": 50
             },
             {
                 "month": "AUGUST",
-                "pointsForMonth": 15
+                "pointsForMonth": 50
             },
             {
                 "month": "JULY",
-                "pointsForMonth": 15
+                "pointsForMonth": 14
             }
         ],
-        "totalPoints": 60.0
+        "totalPoints": 344.0
     }
 ]
 ```
